@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cc8808</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="windowBackground">#000000</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#e3c385</color>
+    <color name ="black">#000000</color>
+
+    <color name="background">#FFF2F7FA</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white_smoke_dk">#f3f2f2</color>
+    <color name="white">#ffffff</color>
+    <color name="orange_theme">#f16826</color>
+    <color name="red">#f14242</color>
+    <color name="blue_tick">#007fff</color>
+    <color name="green">#2de711</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_color_yellow">#ffc600</color>
+    <color name="main_color_red">#9a1000</color>
+    <color name="main_color_red_dk">#711307</color>
+    <color name="main_color_gray_dk">#292929</color>
+    <color name="main_color_gray">#b2b2b2</color>
+    <color name="main_color_gray_lt">#e5e5e5</color>
+    <color name="gray_light">#a1a1a1</color>
+    <color name="gray_cart">#e6ecf4</color>
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+
+</resources>

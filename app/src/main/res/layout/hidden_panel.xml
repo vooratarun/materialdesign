@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hidden_panel"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/filter1"
+        android:onClick="filter1_function"
+        >
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/veg_text"
+        android:id="@+id/veg"
+        android:textSize="10sp"
+        android:layout_weight="1"
+       />
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Non Veg"
+        android:id="@+id/nonveg"
+        android:textSize="10sp"
+        android:layout_weight="1"/>
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Veg &amp; NonVeg"
+        android:id="@+id/veg_nonveg"
+        android:textSize="10sp"
+        android:layout_weight="1"
+        android:checked="true"/>
+    </RadioGroup>
+
+</LinearLayout>

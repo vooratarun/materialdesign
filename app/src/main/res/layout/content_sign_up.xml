@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_sign_up"
+    tools:context="info.androidhive.materialdesign.activity.SignUpAct"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/pad_20dp"
+        >
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First Name"
+            android:background="@android:color/transparent"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/pad_20dp"
+        >
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/pad_20dp"
+            android:hint="Last Name"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/pad_20dp"
+        >
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email Id"
+            android:background="@android:color/transparent"
+            android:paddingLeft="20dp"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/pad_20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="@dimen/pad_3dp">
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Mobile Number"
+            android:background="@android:color/transparent"
+            android:inputType="phone|numberSigned"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:numeric="signed" />
+        <Button
+            android:id="@+id/req_opt_but"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_weight=".5"
+            android:text="Request OTP"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@color/orange_theme"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="20dp">
+        <EditText
+            android:id="@+id/otp_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="OTP"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textSize="@dimen/pad_30dp"
+            android:textColor="@color/white"
+            android:background="@color/orange_theme"
+            />
+    </LinearLayout>
+</LinearLayout>

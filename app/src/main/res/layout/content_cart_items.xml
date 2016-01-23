@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:showIn="@layout/activity_cart_items"
+    tools:context="info.androidhive.materialdesign.activity.CartItemsActivity"
+    android:background="@color/background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_weight=".75"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pad_20dp"
+        android:paddingRight="@dimen/pad_20dp"
+        >
+    <LinearLayout
+        android:id="@+id/cart_items_number_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items : "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05"
+            android:textColor="@color/white"
+            android:background="@color/orange_theme"
+            android:id="@+id/cart_items_number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SubTotal:"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:paddingLeft="@dimen/pad_3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rs"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/pad_15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_total_price"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/pad_15dp"
+            android:text="250"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/discount_price_section"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/pad_15dp"
+        android:gravity="end">
+        <TextView
+            android:paddingLeft="@dimen/pad_3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rs"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/pad_20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_total_discount_price"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/pad_20dp"
+            android:text="200"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    <ListView
+        android:paddingLeft="@dimen/pad_20dp"
+        android:paddingRight="@dimen/pad_20dp"
+        android:layout_below="@id/cart_items_number_section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/cart_item_listview"
+        tools:listitem="@layout/cart_item_single_row_another"
+        android:focusable="true"
+        android:layout_weight="3"
+        android:listSelector="@drawable/list_row_selector"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"
+        android:outlineProvider="bounds"
+        android:transitionGroup="false">
+    </ListView>
+
+
+    <LinearLayout
+        android:background="@color/background"
+        android:layout_below="@+id/cart_item_listview"
+        android:id="@+id/coupon_section"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.41"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:gravity="center">
+        <LinearLayout
+            android:paddingLeft="@dimen/pad_15dp"
+            android:paddingRight="@dimen/pad_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/edit_text_border">
+        <EditText
+            android:layout_gravity="center"
+            android:ems="7"
+            android:id="@+id/coupon_code"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:hint="Enter Promo Code"
+            android:textSize="14sp"
+            android:paddingBottom="0dp"
+            android:layout_weight="2.95"
+            android:inputType="textCapCharacters"
+            android:background="@android:color/transparent"
+            android:selectAllOnFocus="false" />
+        <Button
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:id="@+id/coupon_apply"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:layout_height="25dp"
+            android:background="@drawable/rounded_button"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:outlineProvider="bounds" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_weight="0.3">
+        <TextView
+            android:background="@drawable/rounded_button"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@+id/check_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Checkout "
+            android:textColor="@color/white"
+            android:padding="@dimen/pad_15dp"
+            android:clickable="true"
+            android:textSize="@dimen/txt_15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

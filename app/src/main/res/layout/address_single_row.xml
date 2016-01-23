@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_checked"
+        />
+    <RelativeLayout
+        android:paddingLeft="@dimen/pad_20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Flot:301 prabhakar niwas,Opp iit"
+        android:id="@+id/line1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:textSize="@dimen/txt_15sp"
+       />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line2"
+        android:singleLine="true"
+        android:text="Main Gate Liter Market "
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line1"
+        android:textSize="@dimen/txt_15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IIT Mumbai,Maharashtra"
+        android:id="@+id/google_line1"
+        android:layout_below="@+id/line2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/txt_15sp"
+        android:textColor="@color/gray_light"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/pad_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_address"
+            android:src="@drawable/address_edit"
+            android:paddingRight="@dimen/pad_5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+        <ImageView
+            android:id="@+id/delete_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/address_delete"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+           />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

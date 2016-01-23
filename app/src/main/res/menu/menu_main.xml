@@ -1,0 +1,21 @@
+<menu
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item
+    android:name="android:actionButtonStyle"
+    android:id="@+id/menu_search"
+    android:title="@string/action_search"
+    appcompat:actionViewClass="android.widget.SearchView"
+    appcompat:showAsAction="always"
+
+    />
+
+    <item
+    android:name="android:actionButtonStyle"
+    android:id="@+id/cart"
+    android:title="@string/action_cart"
+    app:actionLayout="@layout/actionbar_cart"
+    app:showAsAction="always"
+    />
+</menu>

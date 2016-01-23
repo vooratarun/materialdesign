@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login"
+    tools:context="info.androidhive.materialdesign.activity.LoginAct"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="2.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:paddingLeft="@dimen/pad_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mobile_image"
+            />
+            <TextView
+                android:paddingLeft="@dimen/pad_10dp"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/pad_15dp"
+                android:textColor="@color/black"
+                android:text="+91"/>
+        <EditText
+
+            android:id="@+id/mobile_number_opt"
+            android:paddingLeft="2dp"
+            android:gravity="bottom"
+            android:text=""
+            android:textSize="@dimen/pad_15dp"
+            android:ems="10"
+            android:layout_weight="1"
+            android:hint="Mobile Number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_gravity="bottom"
+            android:inputType="phone|numberSigned" />
+            <Button
+                android:id="@+id/request_opt_but"
+                android:layout_gravity="bottom"
+                android:textAllCaps="false"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="15dp"
+                android:text="Request OTP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp"
+                android:background="@color/orange_theme"
+                />
+        </LinearLayout>
+        <ImageView
+            android:paddingTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orange_line2"
+
+            />
+        <RelativeLayout
+            android:paddingTop="@dimen/pad_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+            <ImageView
+                android:id="@+id/otp_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/otp_image"/>
+            <EditText
+                android:id="@+id/opt_text"
+                android:paddingLeft="@dimen/pad_20dp"
+                android:layout_toRightOf="@+id/otp_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="OTP"
+                android:layout_centerVertical="true"
+                android:layout_alignBottom="@id/otp_image"
+                android:background="@android:color/transparent"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orange_line2"
+            />
+        <LinearLayout
+            android:paddingTop="@dimen/pad_30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/login_but"
+                android:textAllCaps="false"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:text="Log in"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Don't have an account ?"
+            android:textSize="@dimen/pad_10dp"
+            />
+            <Button
+                android:id="@+id/signup_but"
+                android:textColor="@color/white"
+                android:background="@color/orange_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Sign Up  "
+                android:textAllCaps="false"
+
+                />
+    </LinearLayout>
+
+</LinearLayout>

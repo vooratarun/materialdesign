@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_address"
+    tools:context="info.androidhive.materialdesign.activity.AddAddressAct">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_line1"
+        android:ems="30"
+        android:editable="true"
+        android:hint="Address Line 1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_line2"
+        android:ems="30"
+        android:layout_below="@id/address_line1"
+        android:hint="Address Line 2"/>
+    <ImageView
+
+        android:id="@+id/address_search"
+        android:layout_below="@id/address_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location_icon"
+        >
+    </ImageView>
+
+    <AutoCompleteTextView
+
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_line2"
+        android:layout_toRightOf="@+id/address_search"
+        android:ems="10"
+        android:hint="Search Nearest Place"
+        android:visibility="gone"
+
+        >
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <!--
+    <TextView
+        android:paddingTop="@dimen/pad_10dp"
+        android:paddingLeft="@dimen/pad_10dp"
+        android:id="@+id/address_line3"
+        android:layout_below="@id/address_line2"
+        android:layout_toRightOf="@+id/address_search"
+        android:layout_width="wrap_content"
+        android:hint="nearestLocation"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/but_add_address" />
+
+        -->
+    <!--
+    <Button
+        android:layout_below="@id/address_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search_loc"
+        android:text="loc"
+        />
+    <EditText
+        android:id="@+id/address_line3"
+        android:layout_below="@id/address_line2"
+        android:layout_toRightOf="@+id/btn_search_loc"
+        android:layout_width="wrap_content"
+        android:hint="nearestLocation"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        />
+
+        -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but_add_address"
+        android:text="Done"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
